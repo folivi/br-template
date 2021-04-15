@@ -1,0 +1,6 @@
+@use "../variables";
+
+.br-btn-primary{
+  background: variables.$primary !important;
+  color: variables.$white;
+}

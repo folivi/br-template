@@ -1,0 +1,31 @@
+// :root {
+//   --primary:#A5C145 ;
+//   --white:#ffffff;
+//   --grey: #f3e5e5;
+// }
+
+/** colors **/
+
+$white: #ffffff;
+$grey: #f5f5f6;
+$primary: #A5C145;
+$body-color: #122242;
+
+/** end colors **/
+
+/** fonts **/
+$font-family-sans-serif: "Source Sans Pro";
+$font-family-base: $font-family-sans-serif !default;
+
+/** end fonts **/
+
+
+
+/** borders **/
+
+$border-width: 1.5px !default;
+$border-radius: .5rem !default;
+$border-radius-lg: .6rem !default;
+$border-radius-sm: .4rem !default;
+
+/** end borders **/

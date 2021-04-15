@@ -1,0 +1,23 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+  <a class="navbar-brand" href="#">Br Starter kit</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">{{"home" | translate}} <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+    <span>
+      <select class="form-control" (change)="setLocale($event.target.value)" >
+        <option>{{"select language" | translate}}</option>
+        <option
+          *ngFor= "let lang of availableLocales"
+          value="{{lang.label}}" [selected] = "isSelectLanguage(lang.label)" >
+            {{lang.value}}
+        </option>
+      </select>
+    </span>
+  </div>
+</nav>
