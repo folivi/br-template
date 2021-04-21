@@ -5,7 +5,7 @@ import { TranslateModule } from '@ngx-translate/core';
 
 
 @NgModule({
-  imports: [TranslateModule.forChild(),],
+  imports: [TranslateModule.forChild(),CommonModule],
   exports: [
     CommonModule,
     TranslateModule,

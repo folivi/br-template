@@ -1,13 +1,17 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomePageComponent } from './core/home/home-page/home-page.component';
+import { HomeComponent } from './features/home/home.component';
+import { HomeModule } from './features/home/home.module';
+import { SharedModule } from './shared/SharedModule';
 
-const routes: Routes = [
-  {path: '', component: HomePageComponent},
-];
+const routes: Routes = [{ path: '', component: HomeComponent  }];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  imports: [
+    SharedModule,
+    RouterModule.forRoot(routes),
+    HomeModule
+  ],
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
